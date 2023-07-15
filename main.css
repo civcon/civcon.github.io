@@ -1,0 +1,362 @@
+/*Базовые настройки*/
+html{   
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    min-width: 334px    ;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+/*Боковое меню*/
+.menu{
+    right: 0px;
+    display: none;
+    position:fixed  ;
+    background: #123C69;
+    height: 100vh;
+    width: 450px;
+}
+.close-icon{
+    float: right;
+    margin-top: 29px;
+    margin-right: 10%;
+    width: 21px;
+    height: 23px;}
+.menu-nav1{
+    margin-left: 10%;
+    margin-top: 89px;
+    display: grid;
+    grid-template-columns: 100px;
+}
+.mna{
+    margin-bottom: 7px;
+    font-size: 20px;
+    color: #fff;
+}
+
+/*Шапка сайта*/
+header{
+    background: #123C69;
+    height: 10vh;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header a{
+    text-decoration: none;
+    color: white;
+}
+.nav {
+    padding: 10px;
+}
+.nav 4{
+    padding-right: 0;
+}
+.logo{
+    width: 207px;
+    height: 52px;
+}
+nav a:hover{
+    background: rgba(255, 255, 255, 0.1);
+}
+.burger{
+    display: none;
+    height: 18px;
+    width: 23px;
+}
+.burger_link{
+    display: none;
+}
+.hr{
+    color: #929292;
+    width: 1px;
+}
+/*Заглавный блок*/
+.slogan{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 62vh;
+    background: #123C69;
+}
+#slogan_text{
+    margin-left: 5%;
+    max-width: 435px;
+}
+#slogan_pic{
+    width: 520px;
+    height: 322px;
+}
+#slogan_text h1{
+    color: white;
+    font-weight: 700;
+    font-size: 64px;
+}
+#slogan_text p{
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+}
+#mainpic{
+    margin-right: 5%;
+    height: 322px;
+    width: 520px;
+}
+/*Миссия*/
+.mission{
+    text-align: center;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+.mission p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+}
+.mission hr{
+    margin: 5% 10vw;
+    padding: 0;
+    height: 0;
+    border: none;
+    border-top: 1px solid #333;
+}
+.prb{
+    background: rgba(0, 112, 232, 0.4);
+    color: black;
+}
+/*Заголовок*/
+.title{
+    padding: 5% 10vw;
+    color: white;
+    background: #123C69;
+
+}
+.title h1{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 64px;
+}
+/*Блок контента #1*/
+.content-1{
+    font-size: 18px;
+    margin: 5% 5%;
+}
+.content-text{
+    margin-top: 30px;
+    max-width: 1100px;
+}
+.c1img {
+    max-width: 100%;
+    height: auto;
+}
+/*Блок контента #2*/
+.content-2{
+    font-size: 18px;
+    margin: 5% 5%;
+    display: grid;
+    grid-template-columns: 603px 549px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.c2img{
+    max-width: 100%;
+    height: auto;   
+}
+.txt-link{
+    color: #2C5076;
+}
+/*Блок контента #3*/
+.content-3{
+    font-size: 18px;
+    margin: 5% 5%;
+    display: grid;
+    grid-template-columns: 603px 549px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.c3img{
+    max-width: 100%;
+    height: auto;   
+}
+.txt-link{
+    color: #2C5076;
+}
+/*Бегущая строка*/
+.marquee{
+    background: #123C69;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+}
+/*Вступление*/
+.join{
+    max-width: 416px;
+    margin: 5%;
+}
+.join h1{
+    font-size: 60px;
+}
+.join p{
+    margin-bottom: 30px;
+}
+.name{
+    color: #2C5076;
+}
+.btn{
+    text-decoration: none;
+    color: #FFF;
+    background: #123C69;
+    padding: 5px;
+}
+/*Футер*/
+footer{
+    padding: 5%;
+    color: #FFF;
+    background: #123C69;
+}
+footer a{
+    color: #FFF;
+    font-weight: 400;
+    text-decoration: none;
+}
+.copyrights{
+    padding-bottom: 5px;
+}
+/*Медиа-запросы*/
+@media screen and (max-width: 1300px){
+    .content-2{
+        grid-template-columns: 542px 549px;
+    }
+    .content-3{
+        grid-template-columns: 542px 549px;
+    }
+}
+@media screen and (max-width: 1230px){
+    .content-2{
+        display: block;
+    }
+    .content-3{
+        display: block;
+    }
+}
+@media screen and (max-width: 860px){
+    .c1-img{
+    width: 713px;
+    height: 325px;}
+    #mainpic{
+        height: 261px;
+        width: 421px;}
+    #slogan_text h1{
+        font-weight: 700;
+        font-size: 51px;}
+    #slogan_text p{
+        font-size: 16px;
+    }
+    .logo{
+        width: 186px;
+        height: 47px;
+    }
+    .title p{
+        font-size: 16px;
+    }
+    .title h1{
+        font-size: 51px;
+    }
+    .join h1{
+        font-size: 51px;
+    }
+    /*Меню*/
+    .menu{
+        width: 100vw;
+    }
+}
+@media screen and (max-width: 735px){
+    #mainpic{
+        height: 235px;
+        width: 379px;}
+    #slogan_text h1{
+        font-weight: 700;
+        font-size: 46px;}
+    #slogan_text p{
+        font-size: 14px;
+    }
+    .title p{
+        font-size: 14px;
+    }
+    .title h1{
+        font-size: 46px;
+    }
+    .join h1{
+        font-size: 46px;
+    }
+    .c1-img{
+        float: none;
+        margin: 0 auto;
+    }
+    .content-1{
+        display: block;
+    }
+}
+@media screen and (max-width: 656px){
+    #mainpic{
+        margin-left: 5%;
+        padding-bottom: 20px;
+        order: 1;
+        height: 158px;
+        width: 249px;}
+    #slogan_text{
+        margin-left: 5%;
+        order: 2;
+        max-width: 237px;
+    }
+    #slogan_text h1{
+        line-height: 28px;
+        padding-bottom: 10px;
+        font-weight: 700;
+        font-size: 32px;}
+    #slogan_text p{
+        font-size: 14px;
+    }
+    .title p{
+        font-size: 12px;
+    }
+    .title h1{
+        font-size: 32px;
+    }
+    .join h1{
+        font-size: 32px;
+    }
+    .logo{
+        width: 124px;
+        height: 31px;
+    }
+    .slogan{
+        max-height: 370px;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        flex-direction: column;
+        padding: 5%;
+        display: flex;
+    }
+    nav{
+        display: none;
+    }
+    .burger{
+        display: block;
+    }
+    .burger_link{
+        display: block;
+    }
+}
